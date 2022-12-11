@@ -23,12 +23,7 @@ public class Calculadora {
     public void setNum2(int num2) {
         this.num2 = num2;
     }
-    public int getResultado() {
-        return resultado;
-    }
-    public void setResultado(int resultado) {
-        this.resultado = resultado;
-    }
+
     
     public int soma() {
         return num1 + num2;   

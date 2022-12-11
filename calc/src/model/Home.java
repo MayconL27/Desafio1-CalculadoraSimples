@@ -81,8 +81,8 @@ public class Home {
                 }
     
             }
-        }
-       
+            sc.close();
+        }  
     }
 
 
