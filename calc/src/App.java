@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import model.Calculadora;
 
 
 public class App {
@@ -7,6 +8,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         boolean rodando = true;
+        int num1,num2;
     
         while(rodando) {
 
@@ -23,19 +25,58 @@ public class App {
             switch (opcao) {
                 case 1:
                     System.out.println("Digite o Primeiro número:");
-                    int num1 = sc.nextInt();
+                    num1 = sc.nextInt();
                     System.out.println("Digite o Segundo número:");
-                    int num2 = sc.nextInt();
+                    num2 = sc.nextInt();
 
-                    Calculadora calc = new Calculadora();
+                    Calculadora calc = new Calculadora(num1, num2);
                     calc.setNum1(num1);
                     calc.setNum2(num2);
 
-                    
-
-                    
+                    System.out.println("A soma de "+ num1 + " + " + num2 + " = " + calc.soma() + "\n");                  
                     
                     break;
+                case 2:
+                    System.out.println("Digite o Primeiro número:");
+                    num1 = sc.nextInt();
+                    System.out.println("Digite o Segundo número:");
+                    num2 = sc.nextInt();
+
+                    Calculadora calc2 = new Calculadora(num1, num2);
+                    calc2.setNum1(num1);
+                    calc2.setNum2(num2);
+
+                    System.out.println("A subtração de "+ num1 + " - " + num2 + " = " + calc2.sub() + "\n"); 
+    
+                break;
+
+                case 3:
+                    System.out.println("Digite o Primeiro número:");
+                    num1 = sc.nextInt();
+                    System.out.println("Digite o Segundo número:");
+                    num2 = sc.nextInt();
+
+                    Calculadora calc3 = new Calculadora(num1, num2);
+                    calc3.setNum1(num1);
+                    calc3.setNum2(num2);
+
+                    System.out.println("A multiplicação de "+ num1 + " * " + num2 + " = " + calc3.mult() + "\n"); 
+    
+                break;
+
+                case 4:
+                    System.out.println("Digite o Primeiro número:");
+                    num1 = sc.nextInt();
+                    System.out.println("Digite o Segundo número:");
+                    num2 = sc.nextInt();
+
+                    Calculadora calc4 = new Calculadora(num1, num2);
+                    calc4.setNum1(num1);
+                    calc4.setNum2(num2);
+
+                    System.out.println("A divisão de "+ num1 + " / " + num2 + " = " + calc4.div() + "\n"); 
+    
+                break;
 
             
                 default:
@@ -44,6 +85,8 @@ public class App {
 
         }
     }
+
+   
 
 
     
