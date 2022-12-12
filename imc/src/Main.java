@@ -7,6 +7,5 @@ public class Main {
         Home home = new Home();
         home.home();
 
-
     }
 }

@@ -5,9 +5,12 @@ public class Pessoa {
     private double peso;
     private double altura;
 
+    private double resultado;
+
     public Pessoa() {
         this.peso = peso;
         this.altura = altura;
+        this.resultado = resultado;
     }
 
     public double getPeso() {
@@ -26,9 +29,17 @@ public class Pessoa {
         this.altura = altura;
     }
 
-
-    public void imprimir() {
-        System.out.println(getPeso());
-        System.out.println(getAltura());
+    public double getResultado() {
+        return resultado;
     }
+
+    public void setResultado(double resultado) {
+        this.resultado = resultado;
+    }
+
+    public double calcularIMC() {
+       return peso / (altura * altura);
+    }
+
+
 }
