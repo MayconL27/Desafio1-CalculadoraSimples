@@ -45,7 +45,7 @@ public class Home {
     
                         System.out.println("A subtração de "+ num1 + " - " + num2 + " = " + calc2.sub() + "\n"); 
         
-                    break;
+                        break;
     
                     case 3:
                         System.out.println("Digite o Primeiro número:");
@@ -59,7 +59,7 @@ public class Home {
     
                         System.out.println("A multiplicação de "+ num1 + " * " + num2 + " = " + calc3.mult() + "\n"); 
         
-                    break;
+                        break;
     
                     case 4:
                         System.out.println("Digite o Primeiro número:");
@@ -79,10 +79,10 @@ public class Home {
                         System.out.println("Saindo...");
                         rodando = false;
 
-                    break;
-    
+                        break;
                 
                     default:
+                        System.out.println("Opção inválida digite uma opção válida do menu: \n ***************");
                         break;
                 }
     
