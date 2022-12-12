@@ -74,6 +74,12 @@ public class Home {
                         System.out.println("A divisão de "+ num1 + " / " + num2 + " = " + calc4.div() + "\n"); 
         
                     break;
+
+                    case 0:
+                        System.out.println("Saindo...");
+                        rodando = false;
+
+                    break;
     
                 
                     default:
@@ -81,6 +87,7 @@ public class Home {
                 }
     
             }
+            System.out.println("Fim");
             sc.close();
         }  
     }
