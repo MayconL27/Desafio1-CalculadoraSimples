@@ -18,3 +18,5 @@ Utilizar https://start.spring.io/ para criação da estrutura inicial do spring 
 Escolher qual arquitetura irá utilizar no projeto https://refactoring.guru/design-patterns/java
 
 Qualquer duvida estou a disposição.
+
+> 4° desafio - CRUD
