@@ -72,7 +72,11 @@ public class Home {
                     calc4.setNum1(num1);
                     calc4.setNum2(num2);
 
-                    System.out.println("A divisão de " + num1 + " / " + num2 + " = " + calc4.div() + "\n");
+                    if (num1 == 0 || num2 == 0) {
+                        System.out.println("Nenhum número é divisível por 0, por favor digite um número diferente de 0.");
+                    } else {
+                        System.out.println("A divisão de " + num1 + " / " + num2 + " = " + calc4.div() + "\n");
+                    }
 
                     break;
 
